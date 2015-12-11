@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :paper_fields
   resources :passports
   resources :papers
   resources :templates

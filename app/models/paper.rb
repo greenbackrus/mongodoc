@@ -1,8 +1,7 @@
 class Paper
   include Mongoid::Document
+  validates :type, presence :true
   field :type
-  field :date, type :date
-  field :number
-  field :paper_fields, type :hash
+  embeds_many :paper_fields
   embedded_in :person, inverse_of: pappers
 end

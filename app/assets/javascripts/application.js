@@ -12,5 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require twitter/bootstrap
+//= require angular
+//= require angular-cookie
+//= require underscore
+//= require restangular
+//= require angular-ui-router
+//= require ng-token-auth
+//= require angular-rails-templates
+//= require_tree ./templates 
 //= require_tree .
