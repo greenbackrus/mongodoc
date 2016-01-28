@@ -5,7 +5,6 @@ class Person
   field :fathers_name
   field :family_name
   field :date_of_birth, type: Date
-  embeds_many :passports
-  embeds_many :papers
+  embeds_many :person_paper_fields
   has_many :documents
 end

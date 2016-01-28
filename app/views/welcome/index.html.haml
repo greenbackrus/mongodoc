@@ -1,0 +1,22 @@
+.navbar.navbar-default
+  .container-fluid
+  %ul.nav.navbar-nav
+    %li{'ui-sref-active' => "active"}
+      %a{'href' => "", 'ui-sref' => "people.list"} Клиенты
+    %li{'ui-sref-active' => "active"}
+      %a{'href' => "", 'ui-sref' => "documents.list" } Документы
+    %li{'ui-sref-active' => "active"}
+      %a{'href' => "", 'ui-sref' => "orders.list" } Входящие
+  %ul.nav.navbar-nav.navbar-right
+    %li.dropdown
+      %a.dropdown-toggle{'href' => "", 'data-toggle' => "dropdown", 'role' => "button"} 
+        Бланки 
+        %span.caret
+      %ul.dropdown-menu
+        %li
+          %a{'href' => "", 'ui-sref' => "" } Документов
+          %a{'href' => "", 'ui-sref' => "papers.list" } Личных документов
+
+
+
+%div{'ui-view' => true}

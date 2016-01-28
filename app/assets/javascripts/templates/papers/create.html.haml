@@ -1,0 +1,5 @@
+%form
+  .form-group
+    %label Новый образец документа
+    %input.form-control{'ng-model' => "papersCtrl.newPaper.paper.name",   'placeholder' => "Название"}
+  %button.btn.btn-default{'ng-click' => "papersCtrl.addPaper()"} Добавить

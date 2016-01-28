@@ -1,0 +1,8 @@
+%form
+  .form-group
+    %label Новый контрагент
+    %input.form-control{'ng-model' => "peopleCtrl.newPeople.person.family_name",   'placeholder' => "Фамилия"}
+    %input.form-control{'ng-model' => "peopleCtrl.newPeople.person.first_name",    'placeholder' => "Имя"}
+    %input.form-control{'ng-model' => "peopleCtrl.newPeople.person.fathers_name",  'placeholder' => "Отчество"}
+    %input.form-control{'ng-model' => "peopleCtrl.newPeople.person.date_of_birth", 'type' => "date", 'placeholder' => "Дата рождения"}
+  %button.btn.btn-default{'ng-click' => "peopleCtrl.addPeople()"} Добавить

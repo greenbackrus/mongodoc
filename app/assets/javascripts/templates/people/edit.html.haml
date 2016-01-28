@@ -1,0 +1,8 @@
+%form
+  .form-group
+    %label Изменение данных контрагента
+    %input.form-control{'ng-model' => "peopleCtrl.activePerson.family_name",   'placeholder' => "Фамилия"}
+    %input.form-control{'ng-model' => "peopleCtrl.activePerson.first_name",    'placeholder' => "Имя"}
+    %input.form-control{'ng-model' => "peopleCtrl.activePerson.fathers_name",  'placeholder' => "Отчество"}
+    %input.form-control{'ng-model' => "peopleCtrl.activePerson.date_of_birth", 'type' => "date", 'placeholder' => "Дата рождения"}
+  %button.btn.btn-default{'ng-click' => "peopleCtrl.patchPerson(peopleCtrl.activePerson)"} Сохранить

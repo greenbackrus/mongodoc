@@ -1,3 +1,3 @@
-class Passport
+class PersonPaperField
   include Mongoid::Document
 end

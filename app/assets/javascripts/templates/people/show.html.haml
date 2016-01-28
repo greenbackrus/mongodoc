@@ -1,0 +1,3 @@
+%h3 {{peopleCtrl.activePerson.family_name + ' ' + peopleCtrl.activePerson.first_name + ' ' + peopleCtrl.activePerson.fathers_name}}  
+%a{'ng-click' => "peopleCtrl.editPerson(peopleCtrl.activePerson)", 'href' => "" } Изменить
+%h4 {{peopleCtrl.activePerson.date_of_birth |date:'dd.MM.yyyy'}}

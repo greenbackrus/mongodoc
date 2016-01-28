@@ -5,6 +5,7 @@
     "angular-ui-router": "latest",
     "ng-token-auth": "latest",
     "underscore": "latest",
-    "restangular": "latest"
+    "restangular": "latest",
+    "webix": "latest"
   }
 }

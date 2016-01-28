@@ -1,0 +1,8 @@
+%div 
+  %button{'type' => "button", 'ui-sref' => "papers.addPaper"} Добавить
+  %table.table.table-striped
+    %tr{'ng-repeat' => "paper in papersCtrl.papers"}
+      %td 
+        %a{'ng-click' => "paperCtrl.showInfo(paper)", 'href' => ""} {{paper.name}} 
+      %td  
+        %a{'ng-click' => "papersCtrl.delPaper(paper)", 'href' => "" } DEL 

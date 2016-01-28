@@ -1,2 +1,0 @@
-class PassportsController < ApplicationController
-end

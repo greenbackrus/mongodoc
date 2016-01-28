@@ -1,0 +1,9 @@
+%div 
+  %button{'type' => "button", 'ui-sref' => "people.addPerson"} Добавить
+  %table.table.table-striped
+    %tr{'ng-repeat' => "person in peopleCtrl.people"}
+      %td 
+        %a{'ng-click' => "peopleCtrl.showInfo(person)", 'href' => ""} {{person.family_name + ' ' + person.first_name + ' ' + person.fathers_name}} 
+      %td {{person.date_of_birth |date:'dd.MM.yyyy'}}
+      %td  
+        %a{'ng-click' => "peopleCtrl.delPerson(person)", 'href' => "" } DEL 
